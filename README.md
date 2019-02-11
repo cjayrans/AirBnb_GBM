@@ -1,2 +1,5 @@
-# airBnb_gbm
-Creation of a GBM model for predicting AirBNB rental prices
+# Airbnb Prediction Model
+Creation of a GBM model for predicting Airbnb rental prices. This exercise sources data from Deloittes Machine Learning Competition: 'AirBnB Listings in Major US cities". The data can either be sourced from the link listed below, or from the 'train' and 'test' csv files in this repository. 
+https://www.kaggle.com/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml
+
+During this exercise we start by exploring the sample sets, cleaning it, and engineering factors that we think may be of use once we begin the modeling process. Once the data has been processed we use the 'h2o' package to perform a grid search of our training data, which allows us to identify the appropriate hyper parameters. We also identify independent variables which do not appear to be relevant to the algorithm, excluding them from the model in order to reduce it's complexity. We then test it on a subset of the initial 'train.csv' file, as the actual 'test.csv' file does not contain the dependent variable ('log_price') that we are trying to predict, and therefore, cannot measure estimated accuracy. 
